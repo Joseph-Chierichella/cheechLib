@@ -3,13 +3,15 @@
 #include <fstream>
 #include <cstdlib>
 
+#include "version/version.cpp"
+#include "deleting_files/rm.hpp"
+
 namespace cheech{
   using namespace std;
   
   void test() {
-    cout << 0 << "\n";
+    cout << version << "\n";
   }
-
   string copyFile(string tfile) {
     ifstream file(tfile);
     if (!file.is_open()) {
@@ -20,8 +22,6 @@ namespace cheech{
     string arg = content;
     return arg;
   }
-  void rm(string file) {
-    string command = "rm " + file;
-    system(command.c_str());
-  }
+  void rm(string file);
+
 }
