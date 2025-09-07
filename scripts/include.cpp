@@ -5,6 +5,7 @@
 
 #include "version/version.cpp"
 #include "deleting_files/rm.hpp"
+#include "files/create.cpp"
 
 namespace cheech{
   using namespace std;
@@ -23,5 +24,6 @@ namespace cheech{
     return arg;
   }
   void rm(string file);
+  void create(string file);
 
 }
