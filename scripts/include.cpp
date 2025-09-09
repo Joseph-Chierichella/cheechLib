@@ -6,6 +6,7 @@
 #include "version/version.cpp"
 #include "deleting_files/rm.hpp"
 #include "files/create.cpp"
+#include "files/erasing_info.cpp"
 
 namespace cheech{
   using namespace std;
@@ -25,5 +26,5 @@ namespace cheech{
   }
   void rm(string file);
   void create(string file);
-
+  void clearFile(const std::string& file);
 }
