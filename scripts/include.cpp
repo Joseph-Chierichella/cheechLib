@@ -25,6 +25,6 @@ namespace cheech{
     return arg;
   }
   void rm(string file);
-  void create(string file);
+  void createFile(string file);
   void clearFile(const std::string& file);
 }
